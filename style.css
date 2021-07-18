@@ -1,0 +1,91 @@
+* {
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+.container-fluid {
+    text-align: center;
+}
+
+#player1{
+    background-color: rgb(236, 236, 236);
+}
+
+#player2 {
+    background-color: white;
+}
+
+#player1, #player2 {
+    padding-top: 10%;
+    height: 100vh;
+}
+
+.player-text h2 {
+    font-size: 5rem;
+    font-weight: 200;
+}
+
+.active .player-text h2 {
+    font-weight: 500;
+}
+
+.active .player-text h2::after {
+    content: "\2022";
+    color: #d45252;
+    
+}
+
+.global-score p{
+    color: #d45252;
+}
+
+.global-score {
+    font-size: 7rem;
+    font-weight: 200;
+}
+
+.red-box {
+    margin-top: 20%;
+    background-color: #d45252;
+    width: 30%;
+    padding: 10px;
+}
+
+.red-box, .container {
+    font-size: 2rem;
+}
+
+.round-score {
+    color: white;
+}
+
+.container {
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#new-game:hover, #roll-dice:hover, #hold:hover {
+    font-weight: bold;
+}
+
+.icons {
+    font-size: 2rem;
+    color: #d45252;
+}
+
+#dice-img {
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+
+/* Image du dé*/
+#dice-img img {
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
+}
